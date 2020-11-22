@@ -9,11 +9,11 @@ Official demo application: [Sourcequery](https://sourcequery.yepoleb.at)
 
 ## Requirements
 
-Python >=3.7, no external dependencies
+Python >=3.7, no external dependencies.
 
 ## Install
 
-`pip3 install python-a2s` or `python3 setup.py install`
+`pip3 install python-a2s` or `python3 setup.py install`.
 
 ## API
 
@@ -28,9 +28,9 @@ All functions also have an async version as of package 1.2.0 that adds an `a` pr
 
 ### Parameters
 
-* address: `Tuple[str, int]` - Address of the server.
-* timeout: `float` - Timeout in seconds. Default: 3.0
-* encoding: `str` or `None` - String encoding, None disables string decoding. Default: utf-8
+* address: `Tuple[str, int]` — Address of the server.
+* timeout: `float` — Timeout in seconds. Default: 3.0
+* encoding: `str` or `None` — String encoding, None disables string decoding. Default: utf-8
 
 ### Return Values
 
@@ -38,16 +38,16 @@ All functions also have an async version as of package 1.2.0 that adds an `a` pr
   [source file](a2s/info.py).
 * players: List of Player items. Also documented in the corresponding
   [source file](a2s/players.py).
-* rules: Dictionary of key - value pairs.
+* rules: Dictionary of key — value pairs.
 
 ### Exceptions
 
-* `a2s.BrokenMessageError(Exception)` - General decoding error
-* `a2s.BufferExhaustedError(BrokenMessageError)` - Response too short
-* `socket.timeout` - No response (synchronous calls)
-* `asyncio.exceptions.TimeoutError` - No response (async calls)
-* `socket.gaierror` - Address resolution error
-* `ConnectionRefusedError` - Target port closed
+* `a2s.BrokenMessageError(Exception)` — General decoding error
+* `a2s.BufferExhaustedError(BrokenMessageError)` — Response too short
+* `socket.timeout` — No response (synchronous calls)
+* `asyncio.exceptions.TimeoutError` — No response (async calls)
+* `socket.gaierror` — Address resolution error
+* `ConnectionRefusedError` — Target port closed
 
 ## Examples
 
